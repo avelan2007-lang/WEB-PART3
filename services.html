@@ -107,20 +107,21 @@
 
   <!-- Part 3 Dynamic Search JavaScript -->
   <script>
-    document.getElementById('eventSearch').addEventListener('keyup', function() {
-      var searchValue = this.value.toLowerCase();
-      var table = document.querySelector('table'); // Gets the events table
-      var rows = table.getElementsByTagName('tr');
+  document.getElementById('eventSearch').addEventListener('keyup', function() {
+    var searchValue = this.value.toLowerCase();
+    // This tells the script to look at the SECOND table (the events), not the first one (the menu)
+    var table = document.getElementsByTagName('table')[1]; 
+    var rows = table.getElementsByTagName('tr');
 
-      for (var i = 1; i < rows.length; i++) {
-        var rowText = rows[i].innerText.toLowerCase();
-        if (rowText.includes(searchValue)) {
-          rows[i].style.display = ""; // Show
-        } else {
-          rows[i].style.display = "none"; // Hide
-        }
+    for (var i = 1; i < rows.length; i++) {
+      var rowText = rows[i].innerText.toLowerCase();
+      if (rowText.includes(searchValue)) {
+        rows[i].style.display = ""; // Show
+      } else {
+        rows[i].style.display = "none"; // Hide
       }
-    });
-  </script>
+    }
+  });
+</script>
 </body>
 </html>
