@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Programmes - Greensleeves Children's Trust</title>
+  <meta name="description" content="Explore the education, life skills, and sustainability programmes offered by Greensleeves Children's Trust.">
+  <meta name="keywords" content="Greensleeves programmes, education, life skills, sustainability, youth development">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <table width="100%" cellpadding="10">
+        <tr>
+          <td width="20%">
+            <img src="images/greensleeves-logo.jpg" alt="Greensleeves Children's Trust logo" width="120" height="80" />
+          </td>
+          <td width="80%" align="right">
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About Us</a> &nbsp;|&nbsp;
+            <a href="services.html">Our Programmes</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Get Involved</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact Us</a>
+          </td>
+        </tr>
+      </table>
+      <hr />
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Our Programmes</h1>
+      <p>At Greensleeves Children's Trust, we provide a holistic approach to child development. Our programmes are designed to nurture the mind, body and spirit of every child in our care.</p>
+    </section>
+
+    <section>
+      <h2>Education for All</h2>
+      <img src="images/children-learning.jpg" alt="Children learning at Greensleeves" width="80%" height="350" />
+      <p>We run an on-site schooling structure supporting children from babies up to Grade 12. Our educational approach focuses on:</p>
+      <ul>
+        <li>Early childhood development for infants and toddlers</li>
+        <li>Primary and secondary education up to Grade 12</li>
+        <li>Individualised learning plans for each child</li>
+        <li>Extracurricular activities including sports and arts</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Life Skills Development</h2>
+      <img src="images/garden-activities.jpg" alt="Children learning permaculture gardening" width="80%" height="350" />
+      <p>We believe in equipping children with practical skills that will serve them throughout their lives. Our life skills programmes include baking, bricklaying, permaculture gardening, and financial literacy.</p>
+    </section>
+
+    <section>
+      <h2>Upcoming Events (Searchable)</h2>
+      <!-- Part 3 Dynamic Search -->
+      <p><strong>Search Events:</strong> <input type="text" id="eventSearch" placeholder="Type to search events..." style="padding: 10px; width: 100%; max-width: 300px; border-radius: 8px; border: 2px solid #d4dee8;"></p>
+      
+      <table border="1" cellpadding="10" width="100%">
+        <tr>
+          <th width="50%">Event</th>
+          <th width="50%">Details</th>
+        </tr>
+        <tr>
+          <td><img src="images/kids-holiday-club.jpg" alt="Kids Holiday Club" width="200" height="150" /></td>
+          <td>
+            <h3>Kids Holiday Club</h3>
+            <p><strong>Date:</strong> 29 June - 17 July 2026</p>
+            <p><strong>Location:</strong> FigTree Independent School</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="images/spring-tea-garden.jpg" alt="Spring Tea Garden" width="200" height="150" /></td>
+          <td>
+            <h3>Spring Tea Garden and Fashion Show</h3>
+            <p><strong>Time:</strong> 10AM - 2PM</p>
+            <p><strong>Tickets:</strong> R60.00 per ticket</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="images/trail-run-poster2.jpg" alt="Trail Run Fun" width="200" height="150" /></td>
+          <td>
+            <h3>Trail Run Fun</h3>
+            <p><strong>Date:</strong> 29 August 2026</p>
+            <p><strong>Location:</strong> Brakfontein</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Connect with Us</h2>
+      <ul>
+        <li><a href="http://www.greensleeveschildrenstrust.co.za" target="_blank">Visit Our Website</a></li>
+        <li><a href="https://www.facebook.com/greensleevesct" target="_blank">Follow Us on Facebook</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>&copy; 2026 Greensleeves Children's Trust | Brakfontein, East London, South Africa | <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+  <!-- Part 3 Dynamic Search JavaScript -->
+  <script>
+    document.getElementById('eventSearch').addEventListener('keyup', function() {
+      var searchValue = this.value.toLowerCase();
+      var table = document.querySelector('table'); // Gets the events table
+      var rows = table.getElementsByTagName('tr');
+
+      for (var i = 1; i < rows.length; i++) {
+        var rowText = rows[i].innerText.toLowerCase();
+        if (rowText.includes(searchValue)) {
+          rows[i].style.display = ""; // Show
+        } else {
+          rows[i].style.display = "none"; // Hide
+        }
+      }
+    });
+  </script>
+</body>
+</html>

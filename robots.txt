@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://avelanjokwana.github.io/greensleeves-website/sitemap.xml

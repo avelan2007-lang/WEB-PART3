@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Greensleeves Children's Trust</title>
+  <meta name="description" content="Learn about the history, mission, and team of Greensleeves Children's Trust, a foster village operating since the 1990s.">
+  <meta name="keywords" content="Greensleeves history, foster care, NPO mission, East London charity">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <table width="100%" cellpadding="10">
+        <tr>
+          <td width="20%">
+            <img src="images/greensleeves-logo.jpg" alt="Greensleeves Children's Trust logo" width="120" height="80" />
+          </td>
+          <td width="80%" align="right">
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About Us</a> &nbsp;|&nbsp;
+            <a href="services.html">Our Programmes</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Get Involved</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact Us</a>
+          </td>
+        </tr>
+      </table>
+      <hr />
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>About Greensleeves Children's Trust</h1>
+      <img src="images/foster-home.jpg" alt="Greensleeves foster home" width="100%" height="400" />
+    </section>
+
+    <section>
+      <h2>Our History</h2>
+      <p>
+        Greensleeves Children's Trust was started in the mid-1990s by Di Lehy and Sylvia after they encountered a struggling local family in desperate need of support. What began as a simple act of kindness helping one family grew into a dedicated cluster of foster homes.
+      </p>
+      <p>
+        The founders converted a single farm stable into a safe haven for children, and over the years, the organisation expanded into a fully-fledged foster village that now serves as a model for alternative child care in South Africa.
+      </p>
+      <p>
+        Today, the trust operates multiple foster homes in Brakfontein, outside East London, providing a stable, family-style environment for over 75 vulnerable children.
+      </p>
+      <img src="images/team-photo.jpg" alt="Greensleeves team and staff" width="80%" height="350" />
+    </section>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>
+        To provide a safe, loving and nurturing home environment for vulnerable, abandoned and orphaned children, equipping them with the education, life skills and emotional support they need to become self-sufficient and successful adults.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Vision</h2>
+      <p>
+        A South Africa where no child grows up without the love, care and opportunities they deserve, and where every child has access to education, stability and a hopeful future.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Core Values (Interactive)</h2>
+      <!-- Part 3 Interactive Accordion -->
+      <div class="accordion-container">
+        <button class="accordion">Love and Compassion</button>
+        <div class="panel"><p>Every child deserves to feel loved and valued.</p></div>
+
+        <button class="accordion">Family Environment</button>
+        <div class="panel"><p>We provide a family-style setting rather than an institutional one.</p></div>
+
+        <button class="accordion">Education</button>
+        <div class="panel"><p>We believe education is the key to breaking the cycle of poverty.</p></div>
+
+        <button class="accordion">Independence</button>
+        <div class="panel"><p>We equip children with life skills to become self-sufficient adults.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our Team</h2>
+      <p>Our dedicated team consists of house parents, educators, social workers and support staff who work tirelessly to ensure every child receives the care and attention they deserve.</p>
+      <table border="1" cellpadding="10" width="80%">
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <td>Di Lehy</td>
+          <td>Co-Founder</td>
+          <td>Over 25 years in child care</td>
+        </tr>
+        <tr>
+          <td>Sylvia</td>
+          <td>Co-Founder</td>
+          <td>Over 25 years in social work</td>
+        </tr>
+        <tr>
+          <td>Mrs. Ndlovu</td>
+          <td>Head of Education</td>
+          <td>15 years in teaching</td>
+        </tr>
+        <tr>
+          <td>Mr. Jansen</td>
+          <td>Programmes Coordinator</td>
+          <td>10 years in youth development</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Connect with Us</h2>
+      <ul>
+        <li><a href="http://www.greensleeveschildrenstrust.co.za" target="_blank">Visit Our Website</a></li>
+        <li><a href="https://www.facebook.com/greensleevesct" target="_blank">Follow Us on Facebook</a></li>
+        <li><a href="https://www.linkedin.com/company/greensleevesel" target="_blank">Connect with Us on LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>&copy; 2026 Greensleeves Children's Trust | Brakfontein, East London, South Africa | <a href="contact.html">Contact Us</a></p>
+    <p><strong>Email:</strong> info@greensleeves.org.za | <strong>Phone:</strong> +27 87 555 0000</p>
+  </footer>
+
+  <!-- Part 3 Accordion JavaScript -->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
